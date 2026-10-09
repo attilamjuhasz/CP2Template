@@ -17,21 +17,25 @@ public class HelloWorldSwing {
         JFrame frame = new JFrame("HelloWorldSwing");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
+        frame.setTitle("This is my frame!");
+        frame.setSize(1000,1000);
+        ///
+        // frame.set
+        JPanel left = new JPanel();
 
         frame.setSize(400,400);
 
         //Add the ubiquitous "Hello World" label.
         JLabel label = new JLabel("Hello World");
-        frame.getContentPane().add(label);
+        frame.add(label);
 
         //Part 2
         JButton button = new JButton("Press me");
-        frame.getContentPane().add(button);
+        frame.add(button);
 
 
 
         //Display the window.
-        frame.pack();
         frame.setVisible(true);
     }
 
